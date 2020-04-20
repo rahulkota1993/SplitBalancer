@@ -1,8 +1,20 @@
-public static void main(String[] args) {
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.FileReader;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class HelloWorld {
+        public static void main(String[] args) {
 
         try {
-            FileReader fileReader = new FileReader("/Users/rahulkot/workspace/rahulkot/balances.txt");
-            BufferedReader bReader = new BufferedReader(fileReader);
+            
+             BufferedReader bReader =
+                   new BufferedReader(new InputStreamReader(System.in));
             String line;
             double validInput = 0;
 
@@ -127,3 +139,4 @@ public static void main(String[] args) {
             return map.get(s2).compareTo(map.get(s1));
         }
     }
+}
